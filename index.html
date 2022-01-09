@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="konaki">
+
+
+    <meta name="subtitle" content="konaki">
+
+
+
+
+<title>Konaki Page</title>
+
+
+
+    <link rel="icon" href="/ahicue.github.io/icon1.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/ahicue.github.io/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/ahicue.github.io/js/script.js"></script>
+    
+    <script src="/ahicue.github.io/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/ahicue.github.io/"></a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Posts</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Categories</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Tags</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/ahicue.github.io/"></a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Posts</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Categories</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">Tags</a>
+                
+                    <a class="menu-item" href="/ahicue.github.io/null">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+    <div class="container">
+    <div class="intro">
+        <div class="avatar">
+            <a href="/ahicue.github.io/null"><img src="/ahicue.github.io/icon1.jpg"></a>
+        </div>
+        <div class="nickname">konaki</div>
+        <div class="description"><p>in kawasaki , japan</p>
+</div>
+        <div class="links">
+            
+                
+                    <a class="link-item" title="Twitter" target="_blank" rel="noopener" href="https://twitter.com/ahicue">
+                        
+                        
+                            <i class="iconfont icon-twitter"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Instagram" target="_blank" rel="noopener" href="https://instagram.com/ahicue">
+                        
+                        
+                            <i class="iconfont icon-instagram"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="QQ" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2153634&amp;site=qq&amp;menu=yes">
+                        
+                        
+                            <i class="iconfont icon-qq"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/ahicue">
+                        
+                        
+                            <i class="iconfont icon-github"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Blog" href="/archives">
+                        
+                        
+                            <i class="iconfont icon-blog"></i>
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© konaki | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
